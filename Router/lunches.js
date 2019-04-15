@@ -4,7 +4,7 @@ const Lunches = require('../models/lunchbox')
 const lunchCtrl = require('../Controllers/LunchesCtrl.js')
 
 
-  router.get('/', lunchCtrl.index);
+  router.get('/', lunchCtrl.get);
 
 
 
