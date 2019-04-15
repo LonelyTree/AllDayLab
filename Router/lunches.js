@@ -1,15 +1,24 @@
 const express = require('express')
 const router = express.Router();
-const Lunches = require('../models/lunchbox')
 const lunchCtrl = require('../Controllers/LunchesCtrl.js')
 
 
-router.get('/', lunchCtrl.get);
 
-router.delete('/:id', lunchCtrl.del);
+// N E W
+router.get('/new', lunchCtrl.getNew);
+router.post('/', lunchCtrl.postNew);
 
-router.get('/new', lunchCtrl.put);
+// I N D E X
+router.get('/', lunchCtrl.getIndex);
+router.delete('/:id', lunchCtrl.delIndex);
 
+
+// S H O W
+router.get('/:id', lunchCtrl.getShow)
+
+// E D I T
+router.get('/:id/edit', lunchCtrl.getEdit)
+router.put('/:id', lunchCtrl.putEdit)
 
 
 module.exports = router;
