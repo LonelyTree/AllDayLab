@@ -19,3 +19,4 @@ const lunchBox = [
     },
 ]
 
+module.exports = lunchBox;
