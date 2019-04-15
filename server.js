@@ -5,9 +5,7 @@ const methodOverride = require('method-override')
 const lunchController = require("./controller/lunches")
 
 
-app.use(bodyParser.urlencoded({
-    extended: false
-}));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(methodOverride('_method'))
 app.use('/lunches',lunchController)
 
