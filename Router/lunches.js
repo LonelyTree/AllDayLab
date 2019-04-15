@@ -1,13 +1,10 @@
 const express=require ('express')
 const router = express.Router();
-const Lunches=require('../models/lunchbox.js')
+const Lunches = require('../models/lunchbox')
+const lunchCtrl = require('../Controllers/LunchesCtrl.js')
 
 
-  router.get('/', (req, res) => {
-    res.render('index.ejs', {
-      lunches: Lunches
-    });
-  });
+  router.get('/', lunchCtrl.index);
 
 
 
