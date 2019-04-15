@@ -1,6 +1,6 @@
 const express=require ('express')
 const router = express.Router();
-const Lunches=require('../models/lunchbox')
+const Lunches=require('../models/lunchbox.js')
 
 router.get('/', (req, res) => {
   
