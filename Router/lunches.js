@@ -7,16 +7,20 @@ const lunchCtrl = require('../Controllers/LunchesCtrl.js')
   router.get('/', lunchCtrl.index);
 
 
+  
 
-  router.delete('/:id', (req, res) => {
-    Lunches.splice(req.params.id, 1)
-    res.render('index.ejs', {
-      lunches: Lunches
-    });
-  });
+  router.delete('/:id', lunchCtrl.del);
 
 
 
+  router.get('/new', lunchCtrl.new);
+
+
+  router.get('/:id',(req,res)=>{
+    res.render(show.ejs,{
+      lunches:Lunches[req.params.id]
+    })
+  })
 
 
 module.exports=router;
