@@ -2,12 +2,12 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override')
-const lunchController = require("./controller/lunches")
+const lunchRoute = require("./Router/lunches")
 
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(methodOverride('_method'))
-app.use('/lunches',lunchController)
+app.use('/lunches',lunchRoute)
 
 
 app.listen(3000, () => {
