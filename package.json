@@ -1,10 +1,10 @@
 {
   "name": "ls",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +13,14 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "method-override": "^3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LonelyTree/AllDayLab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LonelyTree/AllDayLab/issues"
+  },
+  "homepage": "https://github.com/LonelyTree/AllDayLab#readme",
+  "description": ""
 }
