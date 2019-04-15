@@ -12,7 +12,11 @@
         
             <%for (let i = 0; i < lunches.length; i++ ) {%>
             
-        <li class="lunches"> <a href="/lunches/<%=i%>"><%=lunches[i].name%></a> </li>
+            <li><a href="lunches/<%=i%>" ><%=lunches[i].name %></a>
+                <form action="/lunches/<%=i %>?_method=DELETE" method="POST">
+                        <input type="submit" value="DELETE"/>
+                </form>
+            </li>
             <%}%>
         </ul>
     </body>

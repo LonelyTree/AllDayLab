@@ -18,5 +18,4 @@ const lunchBox = [
         drink: "Lemonade"
     },
 ]
-
-module.exports = lunchBox
+module.exports=lunchBox;
