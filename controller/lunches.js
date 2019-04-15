@@ -5,6 +5,11 @@ const Lunches=require('../models/lunchbox')
 router.get('/', (req, res) => {
   
     res.render('index.ejs',{
-        lunches:Lunches
+        lunches: Lunches
     });
   });
+
+
+
+
+module.exports=router;
